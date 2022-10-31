@@ -1,0 +1,11 @@
+.*
+
+node_modules
+dist
+
+!.gitignore
+!.editorconfig
+!.prettierrc.json
+!.prettierignore
+!.editorconfig
+!.eslintrc.json

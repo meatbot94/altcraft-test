@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'SFPro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/SFProDisplay-Regular.woff2') format('woff2'),
+    url('./fonts/SFProDisplay-Regular.woff') format('woff'),
+    url('./fonts/SFProDisplay-Regular.ttf') format('truetype'),
+    url('./fonts/SFProDisplay-Regular.eot') format('embedded-opentype');
+}
+
+/* TODO import fonts when necessary */
