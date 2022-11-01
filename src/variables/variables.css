@@ -1,3 +1,43 @@
 :root {
-  --test: #000;
+  /* spacing */
+
+  --sp-xxs: 4px;
+  --sp-xs: 8px;
+  --sp-s: 16px;
+  --sp-m: 32px;
+  --sp-l: 64px;
+  --sp-xl: 128px;
+  --sp-xxl: 256px;
+
+  /* colors */
+
+  --cl-tx-d: #333333;
+  --cl-tx-l: #757575;
+
+  --cl-bg-1: #ffffff;
+  --cl-bg-2: #fafafa;
+  --cl-bg-3: #f2f2f2;
+  --cl-bg-4: #e8e8e8;
+  --cl-bg-5: #e0e0e0;
+
+  /* text */
+
+  --st-s: 400 11px/14px 'SFPro', arial, sans-serif;
+  --st-m: 400 13px/16px 'SFPro', arial, sans-serif;
+  --st-l: 400 15px/20px 'SFPro', arial, sans-serif;
+  --st-xl: 400 17px/24px 'SFPro', arial, sans-serif;
+
+  --mt-s: 400 11px/16px 'SFPro', arial, sans-serif;
+  --mt-m: 400 13px/20px 'SFPro', arial, sans-serif;
+  --mt-l: 400 15px/22px 'SFPro', arial, sans-serif;
+  --mt-xl: 400 17px/26px 'SFPro', arial, sans-serif;
+
+  /* headings */
+
+  --hd-xs: 700 15px/22px 'SFPro', arial, sans-serif;
+  --hd-s: 600 17px/24px 'SFPro', arial, sans-serif;
+  --hd-m: 500 21px/26px 'SFPro', arial, sans-serif;
+  --hd-l: 500 23px/29px 'SFPro', arial, sans-serif;
+  --hd-xl: 500 27px/34px 'SFPro', arial, sans-serif;
+  --hd-xxl: 500 35px/44px 'SFPro', arial, sans-serif;
 }
