@@ -1,3 +1,25 @@
+body,
+header,
+main,
+footer,
+div,
+form,
+input,
+button,
+ul,
+li {
+  display: block;
+  box-sizing: border-box;
+}
+
+form,
+input,
+ul,
+li,
+button {
+  all: unset;
+}
+
 #body {
   width: 100vw;
   height: 100vh;

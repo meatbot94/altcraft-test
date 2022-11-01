@@ -3,5 +3,5 @@
   background: var(--cl-bg-1);
   box-shadow: var(--sh-bg);
   display: grid;
-  grid: repeat(3, 1fr) / 1fr;
+  grid: 1fr 20fr 1fr / 1fr;
 }

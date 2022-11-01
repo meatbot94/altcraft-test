@@ -1,0 +1,48 @@
+#header {
+  padding: var(--sp-m);
+}
+
+.header__form {
+  display: grid;
+  grid: 1fr / minmax(var(--sp-xxl), 1fr) var(--sp-xxl) var(--sp-xl);
+  column-gap: var(--sp-s);
+}
+
+.header__search {
+  width: 100%;
+  height: var(--sp-m);
+  padding: 0 var(--sp-s) 0 var(--sp-s);
+  display: block;
+  box-sizing: border-box;
+  background: var(--cl-bg-3);
+  border-radius: var(--rd-xxs);
+  font: var(--st-m);
+  color: var(--cl-tx-l);
+  transition: color var(--tr-f), background var(--tr-f);
+}
+
+.header__search::placeholder {
+  color: var(--cl-tx-l);
+  opacity: 1;
+  transition: color var(--tr-f);
+}
+
+.header__search:focus,
+.header__search:hover {
+  border-radius: var(--rd-xxs);
+  background: var(--cl-bg-5);
+  color: var(--cl-tx-d);
+}
+
+.header__search:hover::placeholder {
+  color: var(--cl-tx-d);
+}
+
+/* TODO placeholder style */
+
+@media screen and (max-width: 1024px) {
+  /* #header { */
+    /* TODO change header layout */
+    /* grid: 2fr / var(--sp-xxl) var(--sp-xl); */
+  /* } */
+}

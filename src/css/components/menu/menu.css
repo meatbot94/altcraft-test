@@ -1,0 +1,89 @@
+/* #menu { */
+/* } */
+
+.menu__button {
+  width: 100%;
+  height: var(--sp-m);
+  padding: 0 var(--sp-s) 0 var(--sp-s);
+  background: var(--cl-bg-3);
+  border-radius: var(--rd-xxs);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  transition: color var(--tr-f), background var(--tr-f);
+}
+
+.menu__button:hover {
+  cursor: pointer;
+  background: var(--cl-bg-5);
+}
+
+.menu__current {
+  font: var(--st-m);
+  color: var(--cl-tx-l);
+}
+
+.menu__button:hover .menu__current {
+  color: var(--cl-tx-d);
+}
+
+.menu__caret {
+  transform: rotate(180deg);
+}
+
+.menu__caret-path {
+  fill: var(--cl-tx-l);
+  transition: fill var(--tr-f);
+}
+
+.menu__button:hover .menu__caret-path {
+  fill: var(--cl-tx-d);
+}
+
+.menu__options {
+  width: 100%;
+  position: absolute;
+  top: calc(var(--sp-m) + var(--sp-xs));
+  left: 0;
+  border-radius: var(--rd-xxs);
+  background: var(--cl-bg-3);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.menu__option {
+  width: 100%;
+  height: var(--sp-m);
+  padding: 0 var(--sp-s) 0 var(--sp-s);
+  box-sizing: border-box;
+  background: var(--cl-bg-3);
+  border-radius: var(--rd-xxs);
+  font: var(--st-m);
+  color: var(--cl-tx-l);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: color var(--tr-f), background var(--tr-f);
+}
+
+.menu__option:hover {
+  cursor: pointer;
+  background: var(--cl-bg-5);
+  color: var(--cl-tx-d);
+}
+
+.menu__overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.menu__overlay_enabled {
+  display: block;
+}

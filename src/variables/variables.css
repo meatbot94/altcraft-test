@@ -24,6 +24,10 @@
 
   --sh-bg: rgba(149, 157, 165, 0.2) 0px var(--sp-xs) var(--sp-s);
 
+  /* transition */
+  --tr-s: 0.4s ease-out;
+  --tr-f: 0.2s ease-out;
+
   /* border radius */
 
   --rd-xxs: var(--sp-xxs);

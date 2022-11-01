@@ -12,7 +12,48 @@
   <body id="body" class="body">
     <!-- NOTE I know this div is not supposed to be here, but it's just a test anyway -->
     <div id="app" class="app body__app">
-      <header id="header" class="header"></header>
+      <header id="header" class="header app__header">
+        <!-- TODO proper attributes -->
+        <form id="form" class="header__form">
+          <!-- TODO proper attributes -->
+          <input
+            id="search"
+            class="header__search"
+            type="text"
+            placeholder="Search"
+          />
+          <div id="menu" class="menu header__menu">
+            <div class="menu__button">
+              <span class="menu__current">Option</span>
+              <!-- NOTE used inline svg to make the fill change on hover -->
+              <svg
+                class="menu__caret"
+                width="8"
+                height="6"
+                viewBox="0 0 8 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="menu__caret-path"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.801532 0H7.19847C7.85799 0 8.23387 0.769102 7.83871 1.3086L4.64024 5.67248C4.31943 6.10915 3.68057 6.10915 3.36113 5.67248L0.161288 1.3086C-0.233873 0.769102 0.142012 0 0.801532 0Z"
+                  fill="#757575"
+                />
+              </svg>
+
+              <ul class="menu__options">
+                <li class="menu__option">Option</li>
+                <li class="menu__option">Option</li>
+                <li class="menu__option">Option</li>
+                <li class="menu__option">Option</li>
+              </ul>
+            </div>
+            <div class="menu__overlay"></div>
+          </div>
+        </form>
+      </header>
       <main id="main" class="main"></main>
       <footer id="footer" class="footer"></footer>
     </div>
