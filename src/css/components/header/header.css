@@ -38,11 +38,34 @@
   color: var(--cl-tx-d);
 }
 
-/* TODO placeholder style */
+.header__submit {
+  background: var(--cl-bl-br);
+  color: var(--cl-bg-1);
+  border-radius: var(--rd-xxs);
+  font: var(--sb-l);
+  cursor:pointer;
+  transition: background var(--tr-f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__submit:hover {
+  background: var(--cl-bl-rg);
+}
+
+.header__submit:active {
+
+  background: var(--cl-bl-dr);
+}
+
+.header__search-icon {
+  margin: 0 var(--sp-xs) 0 0;
+}
 
 @media screen and (max-width: 1024px) {
   /* #header { */
-    /* TODO change header layout */
-    /* grid: 2fr / var(--sp-xxl) var(--sp-xl); */
+  /* TODO change header layout */
+  /* grid: 2fr / var(--sp-xxl) var(--sp-xl); */
   /* } */
 }

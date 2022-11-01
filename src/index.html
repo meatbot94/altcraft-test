@@ -20,7 +20,7 @@
             id="search"
             class="header__search"
             type="text"
-            placeholder="Search"
+            placeholder="Input"
           />
           <div id="menu" class="menu header__menu">
             <div class="menu__button">
@@ -52,6 +52,14 @@
             </div>
             <div class="menu__overlay"></div>
           </div>
+          <!-- TODO proper attributes -->
+          <button class="header__submit">
+            <img
+            class="header__search-icon"
+              src="<%=require('./assets/header__search-icon.svg')%>"
+              alt="Edit"
+            />Search
+          </button>
         </form>
       </header>
       <main id="main" class="main"></main>

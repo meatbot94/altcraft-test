@@ -20,6 +20,13 @@
   --cl-bg-4: #e8e8e8;
   --cl-bg-5: #e0e0e0;
 
+  /* accent colors */
+
+  --cl-bl-br: #2D7FF9;
+  --cl-bl-rg: #1283DA;
+  --cl-bl-dr: #2750AE;
+  --cl-bl-lg: #9CC7FF;
+
   /* shadows */
 
   --sh-bg: rgba(149, 157, 165, 0.2) 0px var(--sp-xs) var(--sp-s);
@@ -34,15 +41,17 @@
 
   /* text */
 
-  --st-s: 400 11px/14px 'SFPro', arial, sans-serif;
-  --st-m: 400 13px/16px 'SFPro', arial, sans-serif;
-  --st-l: 400 15px/20px 'SFPro', arial, sans-serif;
+  --st-s: 600 11px/14px 'SFPro', arial, sans-serif;
+  --st-m: 500 13px/16px 'SFPro', arial, sans-serif;
+  --st-l: 500 15px/20px 'SFPro', arial, sans-serif;
   --st-xl: 400 17px/24px 'SFPro', arial, sans-serif;
 
-  --mt-s: 400 11px/16px 'SFPro', arial, sans-serif;
-  --mt-m: 400 13px/20px 'SFPro', arial, sans-serif;
-  --mt-l: 400 15px/22px 'SFPro', arial, sans-serif;
+  --mt-s: 600 11px/16px 'SFPro', arial, sans-serif;
+  --mt-m: 500 13px/20px 'SFPro', arial, sans-serif;
+  --mt-l: 500 15px/22px 'SFPro', arial, sans-serif;
   --mt-xl: 400 17px/26px 'SFPro', arial, sans-serif;
+
+  --sb-l: 600 15px/18px 'SFPro', arial, sans-serif;
 
   /* headings */
 
