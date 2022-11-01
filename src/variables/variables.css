@@ -20,6 +20,14 @@
   --cl-bg-4: #e8e8e8;
   --cl-bg-5: #e0e0e0;
 
+  /* shadows */
+
+  --sh-bg: rgba(149, 157, 165, 0.2) 0px var(--sp-xs) var(--sp-s);
+
+  /* border radius */
+
+  --rd-xxs: var(--sp-xxs);
+
   /* text */
 
   --st-s: 400 11px/14px 'SFPro', arial, sans-serif;
