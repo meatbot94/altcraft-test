@@ -38,6 +38,7 @@
   /* border radius */
 
   --rd-xxs: var(--sp-xxs);
+  --rd-m: var(--sp-m);
 
   /* text */
 

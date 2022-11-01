@@ -52,6 +52,8 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  /* TODO think about the solution */
+  display: none;
 }
 
 .menu__option {

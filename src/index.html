@@ -9,6 +9,7 @@
     <meta name="author" content="meatbot94" />
     <title>Altcraft test</title>
   </head>
+  <!-- TODO check semantics -->
   <body id="body" class="body">
     <!-- NOTE I know this div is not supposed to be here, but it's just a test anyway -->
     <div id="app" class="app body__app">
@@ -24,7 +25,7 @@
           />
           <div id="menu" class="menu header__menu">
             <div class="menu__button">
-              <span class="menu__current">Option</span>
+              <span class="menu__current">All</span>
               <!-- NOTE used inline svg to make the fill change on hover -->
               <svg
                 class="menu__caret"
@@ -44,10 +45,11 @@
               </svg>
 
               <ul class="menu__options">
-                <li class="menu__option">Option</li>
-                <li class="menu__option">Option</li>
-                <li class="menu__option">Option</li>
-                <li class="menu__option">Option</li>
+                <li class="menu__option">All</li>
+                <li class="menu__option">Survived</li>
+                <li class="menu__option">Passed away</li>
+                <li class="menu__option">Male</li>
+                <li class="menu__option">Female</li>
               </ul>
             </div>
             <div class="menu__overlay"></div>
@@ -55,7 +57,7 @@
           <!-- TODO proper attributes -->
           <button class="header__submit">
             <img
-            class="header__search-icon"
+              class="header__search-icon"
               src="<%=require('./assets/header__search-icon.svg')%>"
               alt="Edit"
             />Search
@@ -63,7 +65,9 @@
         </form>
       </header>
       <main id="main" class="main"></main>
-      <footer id="footer" class="footer"></footer>
+      <footer id="footer" class="footer">
+        <div class="footer__bar"><div class="footer__bar-fill"></div></div>
+      </footer>
     </div>
   </body>
 </html>

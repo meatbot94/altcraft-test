@@ -1,5 +1,6 @@
 #header {
-  padding: var(--sp-m);
+  padding: var(--sp-s) var(--sp-m);
+  border-bottom: 2px solid var(--cl-bg-3);
 }
 
 .header__form {
@@ -38,12 +39,17 @@
   color: var(--cl-tx-d);
 }
 
+.header__menu {
+  height: var(--sp-m);
+}
+
 .header__submit {
+  height: var(--sp-m);
   background: var(--cl-bl-br);
   color: var(--cl-bg-1);
   border-radius: var(--rd-xxs);
   font: var(--sb-l);
-  cursor:pointer;
+  cursor: pointer;
   transition: background var(--tr-f);
   display: flex;
   justify-content: center;
@@ -55,7 +61,6 @@
 }
 
 .header__submit:active {
-
   background: var(--cl-bl-dr);
 }
 
@@ -64,8 +69,19 @@
 }
 
 @media screen and (max-width: 1024px) {
-  /* #header { */
-  /* TODO change header layout */
-  /* grid: 2fr / var(--sp-xxl) var(--sp-xl); */
-  /* } */
+  .header__form {
+    grid: 2fr / 1fr var(--sp-xl);
+    row-gap: var(--sp-xs);
+  }
+
+  .header__search {
+    grid-column: 1 / span 2;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #header {
+    padding: var(--sp-s)
+  }
+
 }
