@@ -8,6 +8,8 @@ import '../css/index.css';
 
 // ---
 
-import '../variables/variables';
+// import variables from '../variables/variables';
+
+// ---
 
 // ---

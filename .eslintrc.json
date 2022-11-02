@@ -13,7 +13,8 @@
     "no-underscore-dangle": [
       "error",
       {
-        "allowAfterThis": true
+        "allowAfterThis": true,
+        "enforceInMethodNames": false
       }
     ]
   }

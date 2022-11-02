@@ -30,10 +30,10 @@
 
   /* tags colors */
 
-  --cl-tg-mn:  #D0F0FD;
-  --cl-tg-sv: #D1F7C4;
-  --cl-tg-dd: #FFDCE5;
-  --cl-tg-sc: #CFDFFF;
+  --cl-tg-mn: #d0f0fd;
+  --cl-tg-sv: #d1f7c4;
+  --cl-tg-dd: #ffdce5;
+  --cl-tg-sc: #cfdfff;
 
   /* shadows */
 
@@ -71,5 +71,4 @@
   --hd-l: 500 23px/29px 'SFPro', arial, sans-serif;
   --hd-xl: 500 27px/34px 'SFPro', arial, sans-serif;
   --hd-xxl: 500 35px/44px 'SFPro', arial, sans-serif;
-
 }

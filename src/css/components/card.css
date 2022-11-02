@@ -110,9 +110,9 @@
 }
 
 @media screen and (max-width: 800px) {
-.card__content {
-  padding: var(--sp-xs) var(--sp-s);
-}
+  .card__content {
+    padding: var(--sp-xs) var(--sp-s);
+  }
 }
 
 @media screen and (max-width: 600px) {
