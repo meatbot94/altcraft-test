@@ -1,6 +1,7 @@
 :root {
   /* spacing */
 
+  --sp-xxxs: 2px;
   --sp-xxs: 4px;
   --sp-xs: 8px;
   --sp-s: 16px;
@@ -22,16 +23,24 @@
 
   /* accent colors */
 
-  --cl-bl-br: #2D7FF9;
-  --cl-bl-rg: #1283DA;
-  --cl-bl-dr: #2750AE;
-  --cl-bl-lg: #9CC7FF;
+  --cl-bl-br: #2d7ff9;
+  --cl-bl-rg: #1283da;
+  --cl-bl-dr: #2750ae;
+  --cl-bl-lg: #9cc7ff;
+
+  /* tags colors */
+
+  --cl-tg-mn:  #D0F0FD;
+  --cl-tg-sv: #D1F7C4;
+  --cl-tg-dd: #FFDCE5;
+  --cl-tg-sc: #CFDFFF;
 
   /* shadows */
 
   --sh-bg: rgba(149, 157, 165, 0.2) 0px var(--sp-xs) var(--sp-s);
 
   /* transition */
+
   --tr-s: 0.4s ease-out;
   --tr-f: 0.2s ease-out;
 
@@ -62,4 +71,5 @@
   --hd-l: 500 23px/29px 'SFPro', arial, sans-serif;
   --hd-xl: 500 27px/34px 'SFPro', arial, sans-serif;
   --hd-xxl: 500 35px/44px 'SFPro', arial, sans-serif;
+
 }

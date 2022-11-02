@@ -1,8 +1,4 @@
-/* #menu { */
-/* } */
-
 .menu__button {
-  width: 100%;
   height: var(--sp-m);
   padding: 0 var(--sp-s) 0 var(--sp-s);
   background: var(--cl-bg-3);
@@ -56,8 +52,12 @@
   display: none;
 }
 
+/* TODO think about the solution */
+.menu__options_enabled {
+  display: block;
+}
+
 .menu__option {
-  width: 100%;
   height: var(--sp-m);
   padding: 0 var(--sp-s) 0 var(--sp-s);
   box-sizing: border-box;
@@ -86,6 +86,7 @@
   display: none;
 }
 
+/* TODO think about the solution */
 .menu__overlay_enabled {
   display: block;
 }

@@ -1,0 +1,28 @@
+#footer {
+  padding: var(--sp-s) var(--sp-m);
+  border-top: var(--sp-xxxs) solid var(--cl-bg-3);
+}
+
+.footer__bar {
+  height: var(--sp-xs);
+  background: var(--cl-bg-3);
+  align-self: center;
+  border-radius: var(--rd-m);
+  position: relative;
+}
+
+.footer__bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  border-radius: var(--rd-m);
+  background: var(--cl-bl-br);
+}
+
+@media screen and (max-width: 800px) {
+  #footer {
+    padding: var(--sp-s);
+  }
+}

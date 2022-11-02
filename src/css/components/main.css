@@ -1,0 +1,13 @@
+#main {
+  padding: var(--sp-s) var(--sp-m);
+}
+
+.main__cards {
+  max-height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  #main {
+    padding: var(--sp-s);
+  }
+}

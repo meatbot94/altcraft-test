@@ -9,23 +9,32 @@
     <meta name="author" content="meatbot94" />
     <title>Altcraft test</title>
   </head>
-  <!-- TODO check semantics -->
   <body id="body" class="body">
     <!-- NOTE I know this div is not supposed to be here, but it's just a test anyway -->
     <div id="app" class="app body__app">
       <header id="header" class="header app__header">
-        <!-- TODO proper attributes -->
-        <form id="form" class="header__form">
-          <!-- TODO proper attributes -->
+        <form
+          id="form"
+          class="header__form"
+          action="#"
+          method="post"
+          name="form"
+          novalidate
+        >
           <input
             id="search"
             class="header__search"
             type="text"
             placeholder="Input"
+            minlength="4"
+            maxlength="60"
+            pattern="^([a-zA-Z0-9]+[\s|\-]?)+$"
+            required
+            autofocus
           />
           <div id="menu" class="menu header__menu">
             <div class="menu__button">
-              <span class="menu__current">All</span>
+              <span class="menu__current">Everybody</span>
               <!-- NOTE used inline svg to make the fill change on hover -->
               <svg
                 class="menu__caret"
@@ -43,19 +52,17 @@
                   fill="#757575"
                 />
               </svg>
-
               <ul class="menu__options">
-                <li class="menu__option">All</li>
+                <li class="menu__option">Everybody</li>
                 <li class="menu__option">Survived</li>
-                <li class="menu__option">Passed away</li>
+                <li class="menu__option">Not survived</li>
                 <li class="menu__option">Male</li>
                 <li class="menu__option">Female</li>
               </ul>
             </div>
             <div class="menu__overlay"></div>
           </div>
-          <!-- TODO proper attributes -->
-          <button class="header__submit">
+          <button id="submit" class="header__submit" name="submit" form="form">
             <img
               class="header__search-icon"
               src="<%=require('./assets/header__search-icon.svg')%>"
@@ -64,10 +71,47 @@
           </button>
         </form>
       </header>
-      <main id="main" class="main"></main>
+      <main id="main" class="main">
+        <section id="cards" class="cards main__cards"></section>
+      </main>
       <footer id="footer" class="footer">
         <div class="footer__bar"><div class="footer__bar-fill"></div></div>
       </footer>
     </div>
+    <template id="template">
+      <div class="card cards__card">
+        <!-- TODO api to get male or female images -->
+        <div class="card__content">
+          <h2 class="card__name"></h2>
+          <div class="card__info">
+            <div class="card__info-section">
+              <h3 class="card__subtitle">GENDER</h3>
+              <span id="gender" class="card__data card__data_main"></span>
+            </div>
+            <div class="card__info-section">
+              <h3 class="card__subtitle">STATUS</h3>
+              <span
+                id="status"
+                class="card__data card__data_main card__data_dead"
+              ></span>
+            </div>
+            <div class="card__info-section">
+              <h3 class="card__subtitle">AGE</h3>
+              <span id="age" class="card__data card__data_main"></span>
+            </div>
+            <div class="card__info-section">
+              <h3 class="card__subtitle">TICKET</h3>
+              <span id="ticket" class="card__data card__data_secondary"></span>
+            </div>
+            <div class="card__info-section">
+              <h3 class="card__subtitle">CABIN</h3>
+              <span id="cabin" class="card__data card__data_secondary"></span>
+            </div>
+          </div>
+        </div>
+        <!-- NOTE api for females https://xsgames.co/randomusers/avatar.php?g=female and for males https://xsgames.co/randomusers/avatar.php?g=male -->
+        <img src="#" alt="Avatar" class="card__image" />
+      </div>
+    </template>
   </body>
 </html>

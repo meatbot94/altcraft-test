@@ -1,0 +1,125 @@
+.card {
+  background: var(--cl-bg-1);
+  border: var(--sp-xxxs) solid var(--cl-bg-3);
+  border-radius: var(--rd-xxs);
+  margin-bottom: var(--sp-s);
+  transition: border var(--tr-f);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card:hover {
+  border: var(--sp-xxxs) solid var(--cl-bg-5);
+}
+
+.card:last-child {
+  margin: 0;
+}
+
+.card__content {
+  width: 100%;
+  height: 100%;
+  padding: var(--sp-xs) var(--sp-m);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.card__name {
+  font: var(--hd-s);
+  color: var(--cl-tx-d);
+  margin-bottom: var(--sp-xxxs);
+}
+
+.card__info {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid: 1fr / repeat(5, 1fr);
+  column-gap: var(--sp-s);
+}
+
+.card__info-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-between;
+  flex-direction: column;
+}
+
+.card__subtitle {
+  font: var(--st-s);
+  color: var(--cl-tx-l);
+  margin-bottom: var(--sp-xxs);
+}
+
+.card__data {
+  height: var(--sp-s);
+  padding: var(--sp-xxxs) var(--sp-xs);
+  justify-self: left;
+  font: var(--mt-m);
+  color: var(--cl-tx-d);
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__data_main {
+  background: var(--cl-tg-mn);
+  border-radius: var(--rd-m);
+}
+
+.card__data_secondary {
+  border-radius: var(--rd-xxs);
+  background: var(--cl-tg-sc);
+}
+
+.card__data_dead {
+  background: var(--cl-tg-dd);
+}
+
+.card__data_alive {
+  background: var(--cl-tg-sv);
+}
+
+.card__image {
+  width: calc(var(--sp-l) + var(--sp-s));
+  height: calc(var(--sp-l) + var(--sp-s));
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1024px) {
+  .card__info {
+    grid: repeat(2, 1fr) / repeat(3, 1fr);
+    row-gap: var(--sp-xs);
+  }
+
+  .card__image {
+    width: calc(var(--sp-xl) - var(--sp-xxxs));
+    height: calc(var(--sp-xl) - var(--sp-xxxs));
+  }
+}
+
+@media screen and (max-width: 800px) {
+.card__content {
+  padding: var(--sp-xs) var(--sp-s);
+}
+}
+
+@media screen and (max-width: 600px) {
+  /* .card__info {
+    grid: repeat(3, 1fr) / repeat(2, 1fr);
+  } */
+}
+
+@media screen and (max-width: 414px) {
+}

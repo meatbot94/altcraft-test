@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 header,
 main,
@@ -20,10 +24,17 @@ button {
   all: unset;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 #body {
-  width: 100vw;
   height: 100vh;
-  line-height: 0;
   background: var(--cl-bg-5);
   display: grid;
   place-items: center;
@@ -55,12 +66,19 @@ button {
 
 @media screen and (max-width: 800px) {
   .body__app {
-    width: calc(100vw - (var(--sp-s) * 2));
+    width: calc(100vw - (var(--sp-l) * 2));
     height: calc(100vh - (var(--sp-l) * 2));
   }
 }
 
 @media screen and (max-width: 600px) {
+  .body__app {
+    width: calc(100vw - (var(--sp-s) * 2));
+    height: calc(100vh - (var(--sp-s) * 2));
+  }
+}
+
+@media screen and (max-width: 414px) {
   .body__app {
     width: 100vw;
     height: 100vh;
