@@ -39,6 +39,10 @@
   color: var(--cl-tx-d);
 }
 
+.header__search_error {
+  color: var(--cl-rd-br);
+}
+
 .header__menu {
   height: var(--sp-m);
 }
@@ -62,6 +66,11 @@
 
 .header__submit:active {
   background: var(--cl-bl-dr);
+}
+
+.header__submit_disabled {
+  background: var(--cl-bl-dr);
+  cursor: not-allowed;
 }
 
 .header__search-icon {

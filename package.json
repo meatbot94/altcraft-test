@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Search engine",
   "scripts": {
-    "format": "npx prettier --write .",
-    "lint": "npx eslint .",
+    "format": "npx prettier --write . && npx eslint --fix .",
+    "lint": "npx eslint --fix .",
     "build": "webpack --mode production",
     "develop": "webpack serve"
   },

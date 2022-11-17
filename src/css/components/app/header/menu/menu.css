@@ -26,6 +26,7 @@
 
 .menu__caret {
   transform: rotate(180deg);
+  transition: transform var(--tr-f);
 }
 
 .menu__caret-path {
@@ -37,9 +38,14 @@
   fill: var(--cl-tx-d);
 }
 
+.menu__caret_rotated {
+  transform: rotate(360deg);
+}
+
 .menu__options {
   width: 100%;
   position: absolute;
+  z-index: 2;
   top: calc(var(--sp-m) + var(--sp-xs));
   left: 0;
   border-radius: var(--rd-xxs);
@@ -48,16 +54,18 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  /* TODO think about the solution */
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility var(--tr-f), opacity var(--tr-f);
 }
 
-/* TODO think about the solution */
-.menu__options_enabled {
-  display: block;
+.menu__options_visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .menu__option {
+  width: 100%;
   height: var(--sp-m);
   padding: 0 var(--sp-s) 0 var(--sp-s);
   box-sizing: border-box;
@@ -84,9 +92,9 @@
   top: 0;
   left: 0;
   display: none;
+  z-index: 1;
 }
 
-/* TODO think about the solution */
 .menu__overlay_enabled {
   display: block;
 }
